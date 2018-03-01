@@ -9,7 +9,7 @@
 ## Transfer protocols
 Git puede mover datos entre repositorios principalmente de dos formas. Usando el "Dumb protocol" y el "Smart Protocol".
 
-#### Dumb protocol
+### Dumb protocol
 Este protocolo sólo es válido para operaciones de lectura por HTTP.
 Es un protocolo enemigo de lo óptimo. Se basa en que el cliente hace multiples peticiones GET al servidor sin que haya ningún flujo de información desde el cliente al servidor.
 
@@ -30,7 +30,7 @@ git clone http://github.com/rubarax/recursivemerge.git
 
 ### Smart protocol
 
-=== Subiendo datos (push) ===
+#### Subiendo datos (push)
 Se basa en los comandos 'send-pack' & 'receive-pack' de git (uno lo ejecuta el cliente y otro el server).
 
 Estos son realmente comandos que pueden desde la CLI y que el propio git lanza internamente a la hora de hacer un fetch/push.
@@ -43,7 +43,7 @@ Git no se complica más la vida, incluso en el caso de que el cliente no tenga n
 
 Una vez que el cliente sabe en que commit está el server, le es "fácil" (algoritmo de grafos, su famoso revwalker) calcular los commits que tiene que subir. Prepara el pack y lo envía.
 
-=== Bajando datos (fetch) ===
+#### Bajando datos (fetch)
 
 Requiere "inteligencia" por parte del servidor (capacidad de hacer cálculos, no sólo leer objetos), pero es mucho más optimo que el "dumb". En este caso el flujo de información es bidireccional. El cliente le especifíca al servidor que objetos tiene y que cuales quiere y a partir de ahí el servidor genera un pack con todos los objetos necesarios.
 
