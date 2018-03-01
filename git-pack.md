@@ -114,6 +114,14 @@ Vamos a intentar explicar el formato de forma un poco más gráfica.
 
 ### .idx file
 
+![alt text](https://github.com/rubarax/wecode/blob/master/images/idx-format.png ".idx format")
+
+
 ### .pack file
 
+![alt text](https://github.com/rubarax/wecode/blob/master/images/pack-format.png ".pack format")
+
+Object header (type + size)
+
+![alt text](https://github.com/rubarax/wecode/blob/master/images/object-header.png "object header")
 
