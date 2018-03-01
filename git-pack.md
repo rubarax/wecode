@@ -10,6 +10,8 @@
  ```
  
  Cuando hacemos un fetch (clone) o un push los objetos siempre viajan en formato pack, aunque en este caso no viaja un .idx asociado. Es el receptor del pack el que se encarga de verificar su integridad (checksum + objects integrity) y generar el .idx a partir de él.
+ 
+ El .idx se puede regenerar sin ningún problema a partir del .pack, es simplemente un índice para mejorar significativamente la velocidad de acceso a los objetos del .pack.
 
 **Demo**
 ```
@@ -42,7 +44,7 @@ non delta: 20 objects
 > git index-pack .git\objects\pack\pack-e31fd70d21cdf7669be30abeb9d647c8bf290c15.pack
 ```
 
-Cuando hacemos commit en nuestro repositorio local , git crea objetos `loose` y sólo se empaquetan si lo indicamos con un commando explícitamente o bien cuando los packs llegan a unos determinados valores y Git decide dispararlo pos sí mismo.
+Cuando hacemos commit en nuestro repositorio local , git crea objetos `loose` y sólo se empaquetan si lo indicamos con un commando explícitamente o bien cuando los packs llegan a unos determinados valores y Git decide dispararlo por sí mismo.
 
 ```
 e:\tmp\wecode\recursivemerge>dir .git\objects
