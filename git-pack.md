@@ -106,3 +106,14 @@ e:\tmp\wecode\recursivemerge>dir .git\objects\pack
                2 File(s)          4,772 bytes
                2 Dir(s)  28,046,581,760 bytes free               
 ```
+## Files format
+
+La descripción exacta del formato de los ficheros .idx y .pack se puede encontrar en el repositorio de [git](https://github.com/git/git/blob/master/Documentation/technical/pack-format.txt).
+
+Vamos a intentar explicar el formato de forma un poco más gráfica.
+
+### .idx file
+
+### .pack file
+
+
