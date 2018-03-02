@@ -10,6 +10,9 @@ Para ver su potencia y como funciona vamos a seguir el [blogpost](http://blog.pl
 
 **Demo**
 
+La clave de este merge es como queda la letra 'c'. En este ejemplo sólo se toca en dos commits, ambos en la misma rama master/main.
+Primero se cambia a mayúsculas 'C' (cs:2) y después de vuelve a dejar como estaba 'c' (cs:5), luego es claro que después del merge debería de estar en minúscula 'c', en otro caso el merge no se resolvió correctamente.
+
 Para facilitar la comprensión vamos a ver unas tablas de como sería la resolución del merge en cada caso:
 
 **Merge with ancestor cs:4 -> WRONG!**
