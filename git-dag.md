@@ -8,7 +8,7 @@ Git tiene los siguientes tipos de objetos:
 
 Los objetos de Git se pueden encontrar en dos formas "loose" o "packed". Cuando hacemos un clone, todos los objectos del repo los recibimos en un único pack, mientras que si hacemos un commit en nuestro repo local, se creará un fichero por cada objeto
 
-Todos los objetos se pueden explorer directamente a través del comando (no importa si está en forma loose o packed, el commando es transparente:
+Todos los objetos se pueden explorer directamente a través del siguiente comando (no importa si está en forma loose o packed, el commando es transparente):
 ```
 git cat-file -p sha
 ```
